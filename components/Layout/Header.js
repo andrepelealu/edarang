@@ -21,12 +21,18 @@ const Header = () => {
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
       >
+
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
-          <div className="col-start-1 col-end-2 flex items-center">
-            <LogoVPN className="h-8 w-auto" />
-          </div>
+          <Link href="/">
+            <a> 
+              <div className="col-start-1 col-end-2 flex items-center">
+                <LogoVPN className="h-8 w-auto" />
+              </div>
+            </a>
+          </Link>
+
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
-            <LinkScroll
+            {/* <LinkScroll
               activeClass="active"
               to="about"
               spy={true}
@@ -43,8 +49,8 @@ const Header = () => {
               }
             >
               About
-            </LinkScroll>
-            <LinkScroll
+            </LinkScroll> */}
+            {/* <LinkScroll
               activeClass="active"
               to="feature"
               spy={true}
@@ -61,8 +67,8 @@ const Header = () => {
               }
             >
               Feature
-            </LinkScroll>
-            <LinkScroll
+            </LinkScroll> */}
+            {/* <LinkScroll
               activeClass="active"
               to="pricing"
               spy={true}
@@ -79,8 +85,8 @@ const Header = () => {
               }
             >
               Pricing
-            </LinkScroll>
-            <LinkScroll
+            </LinkScroll> */}
+            {/* <LinkScroll
               activeClass="active"
               to="testimoni"
               spy={true}
@@ -97,16 +103,16 @@ const Header = () => {
               }
             >
               Testimonial
-            </LinkScroll>
+            </LinkScroll> */}
           </ul>
-          <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
+          {/* <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             <Link href="/">
               <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
                   Sign In
               </a>
             </Link>
             <ButtonOutline>Sign Up</ButtonOutline>
-          </div>
+          </div> */}
         </nav>
       </header>
       {/* Mobile Navigation */}
