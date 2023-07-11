@@ -44,7 +44,9 @@ const Hero = ({
 
               Gabung waiting list untuk jadi orang pertama yang mencoba solusi kami!
               </p>
-              <ButtonPrimary>Dapatkan Akses Awal</ButtonPrimary>
+              <a target="_blank" href ="https://docs.google.com/forms/d/e/1FAIpQLSf2bxeL2rMMzinFu25Hor0qSjGz2Jh6pkHkn94w3QmmzZ5iTA/viewform">
+                <ButtonPrimary>Dapatkan Akses Awal</ButtonPrimary>
+              </a>
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>

@@ -1,13 +1,13 @@
-import SyaratDanKetentuan from "../components/SyaratKetentuan";
+import TentangKami from "../components/TentangKami";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
 
 export default function Home() {
   return (
     <>
-      <SeoHead title='Edarang CRM Platform | Syarat dan Ketentuan' />
+      <SeoHead title='Edarang CRM Platform | Tentang Kami' />
       <Layout>
-        <SyaratDanKetentuan />
+        <TentangKami />
       </Layout>
     </>
   );

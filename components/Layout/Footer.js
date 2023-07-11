@@ -14,7 +14,7 @@ const Footer = () => {
           <p className="mb-4">
             <strong className="font-medium">Edarang</strong> adalah penyedia layanan customer relation yang memanfaatkan whatsapp API. Membuat anda lebih mudah mengontrol tim customer service.
           </p>
-          <div className="flex w-full mt-2 mb-8 -mx-2">
+          {/* <div className="flex w-full mt-2 mb-8 -mx-2">
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
               <Facebook className="h-6 w-6" />
             </div>
@@ -24,8 +24,12 @@ const Footer = () => {
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
               <Instagram className="h-6 w-6" />
             </div>
-          </div>
+          </div> */}
+
+          <p className="text-gray-400">Kontak: +62 87778247743</p>
+          <p className="text-gray-400">Alamat: Jln.wahyu asri 3a/5 Kota Semarang</p>
           <p className="text-gray-400">©{new Date().getFullYear()} - PT Neira Impian Teknolgi</p>
+
         </div>
         {/* <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
           <p className="text-black-600 mb-4 font-medium text-lg">Product</p>
@@ -55,15 +59,17 @@ const Footer = () => {
           <ul className="text-black-500">
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
             </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+            {/* <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               FAQ{" "}
-            </li>
+            </li> */}
             {/* <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
               Tutorials{" "}
             </li> */}
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Tentang kami{" "}
-            </li>
+            <Link href="/tentang-kami">
+              <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+                <a>Tentang kami</a>
+              </li>
+            </Link>
             
             <Link href="/kebijakan-privasi">
               <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
